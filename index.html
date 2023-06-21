@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carta para mi ratón</title>
+    <link rel="shortcut icon" href="img/iconocorazon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="public/sweet/css/lib/bootstrap-sweetalert/sweetalert.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#fotos">Nuestras Fotos</a>
+            <a href="#rec">Recomendaciones</a>
+            <a href="#cont">¿Por qué?</a>
+        </nav>
+        <section class="textos-header">
+            <h1>Y la seguiré haciendo las veces que sean necesarias</h1>
+            <h2>Para que tengas en todo momento algo que te recuerde todo mi amor por ti</h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros" id="nosotros">
+            <h2 class="titulo">Hola, Tani Mouse</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="img/mariposas.jpg" alt="" class="imagen-about-us">
+                <div class="contenido-textos">
+                    <h3><span>1</span>¿Por qué seguimos juntos?</h3>
+                    <p>Yo creo que es la pregunta más dificil y al mismo tiempo fácil de responder. Hemos pasado por mucho,
+                        casi 8 años de alegrías, de momentos difíciles, de momentos chistosos, tristes, de discusiones,
+                        de amor y desamor jajaja pero de verdad, ya  no puedo imaginar un momento de mi vida en el que no estés tú,
+                        eres parte de mi familia y tu familia ya es para mi una nueva parte de mi vida. Así que, ¿por qué? 
+                        porque en las buenas y en las malas siempre vamos a estar juntos, apoyándonos y saliendo adelante.
+                    </p>
+                    <h3><span>2</span>Los mejores amigos</h3>
+                    <p>Sabes que eres mi mejor amiga, la mejor compañía en cualquier momento y sé que siempre voy  
+                        contar contigo. Lo he visto muchas veces, no importa si estamos enojados, si algo me pasa, se te olvida
+                    el  enojo y te preocupas por mi y sabes que yo haría lo mismo. Siempre voy a estar para ti, para escucharte, para hacerte reir,
+                para contarte el chismesito del día, siempre como The Perfect Two.</p>
+                    <h3><span>3</span>Siempre vernos crecer</h3>
+                    <p>Con el paso de estos años, si algo no nos ha faltado es el apoyo en nuestras metas, siempre queriendo
+                        que el otro crezca, siempre animándonos a dar más y lograr todas esas metas que nos hemos propuesto y que algunas
+                        ya se cunmplieron y otras pronto se cumplirán.  Te paciencia, mi ratoncito, como me dijiste, las personas
+                        con alma bonita tarde o temprano les salen las cosas bien. 
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="portafolio" id="fotos">
+            <div class="contenedor">
+                <h2 class="titulo">Nuestras Fotos</h2>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src="img/beso.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/sinfondo.png" alt="" id="boton1">
+                            <p>¡Beso!</p>
+                        </div>
+                        <script>
+                            var boton1 = document.getElementById("boton1");
+                            boton1.addEventListener("click", function() {
+                                Swal.fire({
+                                    imageUrl: "img/beso.jpg",
+                                    imageHeight: 600,
+                                    imageAlt: 'Beso'
+                                })
+                            });
+                        </script>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/caminando.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/sinfondo.png" alt="" id="boton2">
+                            <p>Siempre de la mano</p>
+                        </div>
+                        <script>
+                            var boton2 = document.getElementById("boton2");
+                            boton2.addEventListener("click", function() {
+                                Swal.fire({
+                                    imageUrl: "img/caminando.jpg",
+                                    imageHeight: 600,
+                                    imageAlt: 'Caminando de la mano'
+                                })
+                            });
+                        </script>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/chily.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/sinfondo.png" alt="" id="boton3">
+                            <p>Con un vago</p>
+                        </div>
+
+                        <script>
+                            var boton3 = document.getElementById("boton3");
+                            boton3.addEventListener("click", function() {
+                                Swal.fire({
+                                    imageUrl: "img/chily.jpg",
+                                    imageHeight: 600,
+                                    imageAlt: 'Chily y Willy'
+                                })
+                            });
+                        </script>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/japones.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/sinfondo.png" alt="" id="boton4">
+                            <p>En tu pais natal</p>
+                        </div>
+                        <script>
+                            var boton4 = document.getElementById("boton4");
+                            boton4.addEventListener("click", function() {
+                                Swal.fire({
+                                    imageUrl: "img/japones.jpg",
+                                    imageHeight: 600,
+                                    imageAlt: 'Japones'
+                                })
+                            });
+                        </script>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/memimi.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/sinfondo.png" alt="" id="boton5">
+                            <p>En un concierto súper divertido</p>
+                        </div>
+                        <script>
+                            var boton5 = document.getElementById("boton5");
+                            boton5.addEventListener("click", function() {
+                                Swal.fire({
+                                    imageUrl: "img/memimi.jpg",
+                                    imageHeight: 600,
+                                    imageAlt: 'Sinfónica'
+                                })
+                            });
+                        </script>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/navidad.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/sinfondo.png" alt="" id="boton6">
+                            <p>Visitando a la navidad</p>
+                        </div>
+                        <script>
+                            var boton6 = document.getElementById("boton6");
+                            boton6.addEventListener("click", function() {
+                                Swal.fire({
+                                    imageUrl: "img/navidad.jpg",
+                                    imageHeight: 600,
+                                    imageAlt: 'Navidad entre ratones'
+                                })
+                            });
+                        </script>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/sonrisa.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/sinfondo.png" alt="" id="boton7">
+                            <p>Siempre haciéndome sonreir</p>
+                        </div>
+                        <script>
+                            var boton7 = document.getElementById("boton7");
+                            boton7.addEventListener("click", function() {
+                                Swal.fire({
+                                    imageUrl: "img/sonrisa.jpg",
+                                    imageHeight: 600,
+                                    imageAlt: 'Sonrisas bonitas'
+                                })
+                            });
+                        </script>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/sou.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/sinfondo.png" alt="" id="boton8">
+                            <p>En museos que no me gustan</p>
+                        </div>
+                        <script>
+                            var boton8 = document.getElementById("boton8");
+                            boton8.addEventListener("click", function() {
+                                Swal.fire({
+                                    imageUrl: "img/sou.jpg",
+                                    imageHeight: 600,
+                                    imageAlt: 'En museos que no me gustan'
+                                })
+                            });
+                        </script>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/sp.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/sinfondo.png" alt="" id="boton9">
+                            <p>Con Spiderman</p>
+                        </div>
+                        <script>
+                            var boton9 = document.getElementById("boton9");
+                            boton9.addEventListener("click", function() {
+                                Swal.fire({
+                                    imageUrl: "img/sp.jpg",
+                                    imageHeight: 600,
+                                    imageAlt: 'Con Spiderman'
+                                })
+                            });
+                        </script>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/vive.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/sinfondo.png" alt="" id="boton10">
+                            <p>Buena música</p>
+                        </div>
+                        <script>
+                            var boton10 = document.getElementById("boton10");
+                            boton10.addEventListener("click", function() {
+                                Swal.fire({
+                                    imageUrl: "img/vive.jpg",
+                                    imageHeight: 600,
+                                    imageAlt: 'En el vive latino'
+                                })
+                            });
+                        </script>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/batman.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/sinfondo.png" alt="" id="boton11">
+                            <p>Con Batman</p>
+                        </div>
+                        <script>
+                            var boton11 = document.getElementById("boton11");
+                            boton11.addEventListener("click", function() {
+                                Swal.fire({
+                                    imageUrl: "img/batman.jpg",
+                                    imageHeight: 600,
+                                    imageAlt: 'Con Batman'
+                                })
+                            });
+                        </script>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/mariposas.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/sinfondo.png" alt="" id="boton12">
+                            <p>Y muchas mariposas</p>
+                        </div>
+                        <script>
+                            var boton12 = document.getElementById("boton12");
+                            boton12.addEventListener("click", function() {
+                                Swal.fire({
+                                    imageUrl: "img/mariposas.jpg",
+                                    imageHeight: 600,
+                                    imageAlt: 'Maripositas y tú'
+                                })
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clientes contenedor" id="rec">
+            <h2 class="titulo">Hasta los de tu familia lo dicen</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="img/mickey.jpg" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Mickey Mouse</h4>
+                        <p>Les juro por Disney y sus millones que Axel ama con todo su corazón a Tania.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/japo.jpeg" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Un watashi wa cualquiera</h4>
+                        <p>アクセルはタニアをとても愛していると鬼頭寿司に誓います</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/elis.jpg" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Eli Tronsky</h4>
+                        <p>¡No puedo, Martha! ¡Salud!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-services">
+            <div class="contenedor">
+                <h2 class="titulo">¿Por qué te amo?</h2>
+                <div class="servicio-cont">
+                    <div class="servicio-ind">
+                        <img src="img/ilustracion1.svg" alt="">
+                        <h3>Porque quiero</h3>
+                        <p>Amo amarte y estar contigo. Ha sido mi decisión seguir echándole ganas aun con lo difícil que ha sido</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="img/ilustracion4.svg" alt="">
+                        <h3>Porque puedo</h3>
+                        <p>Porque sigues conmigo y mientras pueda te seguiré demostrando mi amor.</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="img/ilustracion3.svg" alt="">
+                        <h3>Porque eres la mejor de Disney</h3>
+                        <p>Ya sé que te gusta que te lo diga y te lo diré todos los días de mi vida, eres la mejor de Disney.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="cont">
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Phone</h4>
+                <p>01-800-teamo-mucho</p>
+            </div>
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>axelamaatania@teamo.com</p>
+            </div>
+            <div class="content-foo">
+                <h4>Ubicación</h4>
+                <p>En mi corazón</p>
+            </div>
+        </div>
+        <h2 class="titulo-final"> Siempre te voy a amar | Porque eres la mejor de Disney</h2>
+    </footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</html>
